@@ -6,7 +6,7 @@ import processing.core.PApplet;
 public class Main extends PApplet {
 	
 	//cargar txt
-	String[]listaPalabras, ListP;
+	String[]listaPalabras;
 	
 	//Arrreglos
 	Cuadrado cuadra[] = new Cuadrado [500];
@@ -31,9 +31,6 @@ public class Main extends PApplet {
 	public void setup() {
 	
 	listaPalabras= loadStrings("texto/texto1.txt");
-	
-	ListP = listaPalabras[0].split(" ");
-	println(ListP[1]+" "+ListP[2]);
 		
 	}
 	
