@@ -1,0 +1,36 @@
+package main;
+import processing.core.PApplet;
+//import java.util.ArrayList;
+
+
+public class Main extends PApplet {
+	
+	String[]listaPalabras;
+	
+	public static void main(String[] args) {
+		PApplet.main("main.Main");
+	}
+	
+
+	
+	public void settings() {
+		
+		
+	}
+	public void setup() {
+		
+		
+	}
+	
+	public void draw() {
+		
+		
+		
+	}
+	
+
+	
+	
+	
+	
+}// main

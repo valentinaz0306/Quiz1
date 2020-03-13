@@ -1,0 +1,42 @@
+package main;
+import processing.core.PApplet;
+//import java.util.ArrayList;
+
+
+public class Main extends PApplet {
+	
+	//cargar txt
+	String[]listaPalabras;
+	
+	//Arrreglos
+	Cuadrado cuadra[] = new Cuadrado [500];
+	Circulo circu[] = new Circulo[500];	
+	
+	public static void main(String[] args) {
+		PApplet.main("main.Main");
+	}
+	
+
+	
+	public void settings() {
+		
+		
+	}
+	public void setup() {
+	
+	listaPalabras= loadStrings("texto/texto1.txt");
+		
+	}
+	
+	public void draw() {
+		
+		
+		
+	}
+	
+
+	
+	
+	
+	
+}// main

@@ -1,0 +1,34 @@
+package main;
+
+import processing.core.PApplet;
+
+public class Cuadrado extends Figura  {
+
+	private PApplet app;
+		
+//
+	public Cuadrado (int px,int py,int colR,int colG,int colB,PApplet app) {
+		super(px,py,colR,colG,colB);
+		this.app= app; 	
+		
+	}
+	
+	public void moverse(){
+		
+		this.setPosy(this.getVely()+ this.getPosy());
+		if(this.getPosy()>=775 ||this.getPosy()<=25) {
+			this.setVely(this.getVely() * -1);
+		}
+		this.setPosx(this.getVelx()+ this.getPosx());
+		if(this.getPosx()>=775 ||this.getPosx()<=25) {
+			this.setVelx(this.getVelx() * -1);
+		}
+			
+	}//moverse 
+	
+	public void pintar(){
+		app.fill(this.getColorR(),this.getColorG(),this.getColorB());
+		app.rect(this.getPosx(),this.getPosy(),this.getTamano(),this.getTamano());
+		
+	}//pintar
+}

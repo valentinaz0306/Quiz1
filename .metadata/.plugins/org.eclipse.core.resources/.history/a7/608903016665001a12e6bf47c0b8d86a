@@ -1,0 +1,64 @@
+package main;
+import processing.core.PApplet;
+//import java.util.ArrayList;
+
+
+public class Main extends PApplet {
+	
+	//cargar txt
+	String[]listaPalabras;
+	
+	//Arrreglos
+	Cuadrado cuadra[] = new Cuadrado [500];
+	Circulo circu[] = new Circulo[500];	
+	
+	//CONTADORES PARA ARREGLOS
+	
+	int cont1=0;
+	int cont2=0;
+	
+	public static void main(String[] args) {
+		PApplet.main("main.Main");
+	}
+	
+
+	
+	public void settings() {
+		
+		size(800,800);
+		
+	}
+	public void setup() {
+	
+	listaPalabras= loadStrings("texto/texto1.txt");
+		
+	}
+	
+	public void draw() {
+		
+		//circulos
+		rectMode(CENTER);
+		background(155);
+		for(int i=0;i<cont1;i++) {
+			Circulo c = circu[i];
+			c.pintar();
+			c.moverse();	
+		}
+
+		//cuadrados
+			for(int i=0;i<cont2;i++) {
+				Cuadrado cu = cuadra[i];
+				cu.pintar();
+				cu.moverse();	
+			}
+		
+		
+		
+	}
+	
+
+	
+	
+	
+	
+}// main
